@@ -118,15 +118,24 @@ ul {
 .flex-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
+
 .rounded-black {
     border: 1px solid var(--black);
     border-radius: 100rem; 
 }
+
 .rounded-none {
     border: none;
     border-radius: 100rem; 
+}
+
+.rounded-corner {
+    border-radius: 2rem; 
+}
+.rounded-corner-black {
+    border-radius: 2rem; 
+    border: 1px solid var(--black);
 }
 
 /* Tags */
@@ -138,7 +147,7 @@ ul {
 }
 
 .text-tag {
-    padding: 0.35rem 0.75rem;
+    padding: 0.3rem 0.75rem;
     font-weight: 400;
 }
 
@@ -190,6 +199,15 @@ ul {
     color: var(--Lavender);
 }
 
+/* Accordion-icon */
+.accordion-icon svg {
+    color: var(--white);
+    background-color: var(--Lavender);
+}
+.accordion-icon svg:hover {
+    transform: rotate(90deg);
+}
+
 /* navigation */
 nav {
     display: flex;
@@ -203,7 +221,7 @@ nav {
     padding: 1.3rem 0.5rem;
 }
 
-.nav-logo{
+.nav-logo {
     width: 8.8rem;
     display: block;
 }
@@ -254,6 +272,7 @@ nav {
 
 /* Hero Section */
 .hero, .hero-head{
+    align-items: center;
     max-width: 65rem;
     margin-right: auto;
     margin-left: auto;
@@ -268,4 +287,60 @@ nav {
 .hero-img {
     max-width: 100%;
     border-radius: 2rem;
+}
+
+/* Services Section */
+.services {
+    background-color: var(--lightgray);
+    padding: 6rem 2rem;
+}
+
+.services-head {
+    gap: 0.5rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.service-cards-container {
+    gap: 1rem;
+}
+
+.service-card-name {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-name, .service-description  {
+    font-size: var(--textsize-large); 
+    margin: 0;
+}
+
+.service-card-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem;
+}
+
+.service-description {
+    font-size: var(--textsize-medium);
+}
+
+.service-img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    width: 100%;
+}
+
+.service-card-content {
+    align-items: flex-start; 
+    gap: clamp(0.5rem, 2vw, 1.5rem)  
+}
+
+@media (max-width: 768px) {
+    .service-card-body {
+        grid-template-columns:1fr;
+    }
 }

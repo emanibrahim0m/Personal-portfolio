@@ -1,3 +1,4 @@
+// Hamburger Menu
 const ham_menu = document.querySelector(".ham-menu");
 const nav_links = document.querySelector(".nav-left");
 
