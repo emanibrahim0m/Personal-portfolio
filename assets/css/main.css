@@ -89,17 +89,19 @@ h6 { font-size: clamp(0.875rem, 2vw, 1.25rem); }
 /* General Settings */
 * {
     box-sizing: border-box;
-    font-family: var(--En-font);
     background-color: transparent;
 }
 
 body {
     padding: 0 5%;
+    color: var(--black);
+    font-family: var(--En-font);
 }
 
 /* Links&Lists */
 a {
     text-decoration: none;
+    color: var(--black);
 }
 
 ul {
@@ -180,4 +182,47 @@ ul {
 
 .button-link:hover {
     color: var(--Lavender);
+}
+
+/* navigation */
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    top: 5%;
+    width: 100%;
+    align-items: center;
+    background: rgba(248, 248, 248, 0.75);
+    backdrop-filter: blur(12px);
+    padding: 1.3rem 0.5rem;
+}
+
+.nav-logo{
+    width: 8.8rem;
+    display: block;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--textsize-small);
+}
+
+.nav-link:hover {
+    background-color: var(--Lavender);
+}
+
+#nav-button{padding-left: 1.5rem;}
+
+/* Temporary Till JS */
+@media (max-width: 768px) {
+    .nav-left {
+        flex-wrap: wrap;
+        gap: .2rem;
+    }
 }
