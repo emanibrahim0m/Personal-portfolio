@@ -98,6 +98,12 @@ body {
     font-family: var(--En-font);
 }
 
+/* Section */
+section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
 /* Links&Lists */
 a {
     text-decoration: none;
@@ -225,4 +231,22 @@ nav {
         flex-wrap: wrap;
         gap: .2rem;
     }
+}
+
+/* Hero Section */
+.hero, .hero-head{
+    max-width: 65rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.hero-text {
+    margin-bottom: 2rem;
+}
+
+.hero-img {
+    max-width: 100%;
+    border-radius: 2rem;
 }
