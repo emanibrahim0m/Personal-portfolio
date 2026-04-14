@@ -1,0 +1,18 @@
+/* Color Palette - Typography */
+:root {
+    /*  Color Palette */
+    --white: #ffffff;
+    --black: #171717;
+    --gray: #f2f2f2;
+    --lightgray: #f8f8f8;
+    --Lavender: 	#c493ff;
+
+    /*  Typography */
+    --En-font: 'Poppins', sans-serif;
+    --Ar-font: 'Cairo', sans-serif;
+    --textsize-large: clamp(1.125rem, 2vw, 1.5rem);
+    --textsize-medium: clamp(1rem, 1.5vw, 1.25rem);
+    --textsize-regular: 1rem;
+    --textsize-small: 0.875rem;
+    --textsize-tiny: 0.75rem;
+}
