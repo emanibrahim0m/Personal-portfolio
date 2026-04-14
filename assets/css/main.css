@@ -68,3 +68,64 @@ ul {
     border-radius: 100rem; 
 }
 
+
+/* Tags */
+.tag {
+    background-color: var(--Lavender); 
+    color: var(--black);
+    display: inline-block;
+    font-size: var(--textsize-small);
+}
+
+.text-tag {
+    padding: 0.35rem 0.75rem;
+    font-weight: 400;
+}
+
+.tool-tag {
+    padding: 0.25rem 0.75rem;
+    font-weight: 700;
+}
+
+/* Buttons */
+.button {
+    cursor: pointer;
+    padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.25rem);
+    font-size: clamp(var(--textsize-tiny), 2vw, var(--textsize-small));
+}
+
+.button-primary {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--black);
+}
+
+/* Buttons Hover */
+.button-primary:hover{
+    color: var(--Lavender);
+}
+
+.button-secondary:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Button Link */
+.button-link {
+    color: var(--black);
+    padding: 0.25rem 0;
+    font-size: var(--textsize-regular);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.button-link:hover {
+    color: var(--Lavender);
+}
