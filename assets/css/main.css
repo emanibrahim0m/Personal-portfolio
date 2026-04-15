@@ -243,7 +243,7 @@ nav {
     align-items: center;
     background: rgba(248, 248, 248, 0.75);
     backdrop-filter: blur(12px);
-    padding: 1.3rem 0.5rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .nav-logo {
@@ -317,16 +317,16 @@ nav {
 /* Logos Section */
 .logo-componant {
     align-items: center; 
-    gap: 1.5rem;
+    gap: 3rem;
 }  
 
 .logos-icons {
     display: flex;
-    gap: 2rem;
+    gap: clamp(1rem, 5vw, 6rem);
 }
 
 .tool-logo {
-    height: 3rem;
+    height: clamp(2rem, 3vw, 3rem);
     width: auto;
     opacity: 0.6;
     filter: grayscale(30%);
@@ -337,16 +337,17 @@ nav {
     filter: grayscale(0%);
 }
 
-@media (max-width: 768px) {
-    .logos-icons {
-        gap: 0.5rem;
-    } 
-}
 
 /* Services Section */
 .services {
     background-color: var(--lightgray);
     padding: 6rem 2rem;
+}
+
+.service-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
 }
 
 .services-head {
@@ -365,7 +366,7 @@ nav {
     justify-content: space-between;
 }
 
-.service-name, .service-description  {
+.service-description  {
     font-size: var(--textsize-large); 
     margin: 0;
 }
@@ -395,7 +396,7 @@ nav {
     padding: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .service-card-body, .service-card-body.active {
         grid-template-columns:1fr;
     }
@@ -449,7 +450,7 @@ nav {
     padding: 1.25rem 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .project-cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -503,10 +504,6 @@ nav {
     align-items: center;
 }
 
-.process-card:has(.process-card-body.active) .accordion-icon svg {
-    transform: rotate(-45deg);
-    transition: transform 0.3s ease;
-}
 
 .process-card-body {
     padding: 0 1.5rem 1rem 1.5rem;
@@ -516,7 +513,7 @@ nav {
     background-color: var(--Lavender);
     align-items: center;
     text-align: center;
-    padding: clamp(0.5rem, 2vw, 2.5rem)  0;
+    padding: clamp(1rem, 4vw, 3rem)  4rem;
 }
 
 /* Accordion for poth process / service */
@@ -530,6 +527,12 @@ nav {
 
 .process-card:hover, .service-card:hover {
     cursor: pointer;
+}
+
+.process-card:has(.process-card-body.active) .accordion-icon svg,
+.service-card:has(.service-card-body.active) .accordion-icon svg {
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
 }
 
 /* Footer */
@@ -619,9 +622,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .footer-left {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    grid-template-columns: repeat(2, 1fr);
+
     .footer-form {
         grid-template-columns: 1fr;
     }

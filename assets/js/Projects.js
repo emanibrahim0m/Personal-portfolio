@@ -1,5 +1,6 @@
 // Data Structure
 const projects_cards = [{
+    link: ``,
     image: `./assets/images/temporary img.jpg`,
     name: `Company Profile Website`,
     text: `ME Company`,
@@ -7,6 +8,7 @@ const projects_cards = [{
     tool2: `CSS`,
     tool3: `HTML`,
 },{
+    link: ``,
     image: `./assets/images/temporary img.jpg`,
     name: `Personal Portfolio`,
     text: `Responsive website`,
@@ -14,6 +16,7 @@ const projects_cards = [{
     tool2: `CSS`,
     tool3: `HTML`,
 },{
+    link: ``,
     image: `./assets/images/temporary img.jpg`,
     name: `Lorem Ipsum`,
     text: `Lorem Ipsum`,
@@ -27,7 +30,7 @@ let project_card_html = '';
 projects_cards.forEach((card) => {
     project_card_html += `
         <article class="project-card  rounded-corner">
-            <a href="" class="project-link flex-column">
+            <a href="${"#"}" class="project-link flex-column">
                 <img src="${card.image}" alt="" class="project-img  rounded-corner" />
                 <div class="project-description flex-column">
                     <div class="project-text-body">
@@ -39,7 +42,7 @@ projects_cards.forEach((card) => {
                             <span class="tag tool-tag rounded-none">${card.tool3}</span>
                         </div>
                     </div>
-                    <span href="" class="button-link">View project
+                    <span class="button-link">View project
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"

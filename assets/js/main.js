@@ -1,7 +1,7 @@
 // Navigation
 const nav = document.querySelector("#navigation");
 nav.innerHTML += `
-    <a href="" class="nav-logo-link">
+    <a href="./index.html" class="nav-logo-link">
         <img src="./assets/images/Logo.png" alt="Logo" class="nav-logo" />
     </a>
     <ul class="nav-left">
@@ -16,7 +16,7 @@ nav.innerHTML += `
         </li>
         <li><a href="#" class="nav-link rounded-none">Blog</a></li>
         <li id="nav-button">
-            <a href="" class="button button-primary rounded-none">Get in Touch</a>
+            <a href="./contact.html" class="button button-primary rounded-none">Get in Touch</a>
         </li>
     </ul>
     <div class="ham-menu">
@@ -53,7 +53,7 @@ const footer = document.querySelector(".footer-container");
 footer.innerHTML = `
       <footer>
         <div class="footer-right flex-column">
-          <a href="/" class="footer-logo-link">
+          <a href="./index.html" class="footer-logo-link">
             <img src="./assets/images/Logo.png" alt="Logo" class="footer-logo" />
           </a>
           <div class="footer-newsletter flex-column rounded-corner">
@@ -83,20 +83,20 @@ footer.innerHTML = `
         <div class="footer-left">
           <div class="footer-link-list flex-column">
             <h6 class="footer-heading">Quick Links</h6>
-            <a href="" class="footer-link">About Me</a>
-            <a href="" class="footer-link">Services</a>
-            <a href="" class="footer-link">Projects</a>
-            <a href="" class="footer-link">Contact Me</a>
+            <a href="./about.html" class="footer-link">About Me</a>
+            <a href="./services.html" class="footer-link">Services</a>
+            <a href="./projects.html" class="footer-link">Projects</a>
+            <a href="./contact.html" class="footer-link">Contact Me</a>
           </div>
           <div class="footer-link-list flex-column">
             <h6 class="footer-heading">Contact</h6>
-            <a href="" class="footer-link">0106 9771 169</a>
-            <a href="" class="footer-link">emanibrahim0m<br />@gmail.com</a>
-            <a href="" class="footer-link">Cairo, Egypt</a>
+            <a href="tel: +201069771169" class="footer-link">0106 9771 169</a>
+            <a href="mailto:emanibrahim0m@gmail.com" class="footer-link">emanibrahim0m<br />@gmail.com</a>
+            <a href="https://maps.app.goo.gl/CawL6iEPhDVqs5SQ9" class="footer-link">Cairo, Egypt</a>
           </div>
           <div class="footer-link-list flex-column">
             <h6 class="footer-heading">Follow Me</h6>
-            <a href="www.linkedin.com/in/emanibrahim0m" class="social-link">
+            <a href="https://www.linkedin.com/in/emanibrahim0m" class="social-link">
               <svg
                 width="24"
                 height="24"
@@ -136,5 +136,4 @@ footer.innerHTML = `
         <p>© 2026 EI - Licensing</p>
         <p>Designed by Influx® </p>
       </div>
-
 `
