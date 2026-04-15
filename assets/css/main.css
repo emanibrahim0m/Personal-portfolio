@@ -622,8 +622,9 @@ footer {
 }
 
 @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);
-
+    .footer-left {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .footer-form {
         grid-template-columns: 1fr;
     }
@@ -631,3 +632,35 @@ footer {
 
 #end p { display: inline-block; } 
 #end p:last-child { position: absolute; right: 5% }
+
+/* About/Service Page  Hero Section */
+.a-s-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+}
+
+.a-s-hero-left {
+    align-items: start; 
+    gap: 1rem;   
+}
+.a-s-hero-img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 3rem;
+    width: 100%;
+    height: auto;
+    object-position: right;
+}
+.a-s-hero-body {
+    font-size: var(--textsize-medium);
+}
+
+@media (max-width: 768px) {
+    .a-s-hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem; 
+    }
+
+}
