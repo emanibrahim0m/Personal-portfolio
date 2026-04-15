@@ -48,3 +48,93 @@ ham_menu.addEventListener("click", () => {
 })
 
 
+// Footer
+const footer = document.querySelector(".footer-container");
+footer.innerHTML = `
+      <footer>
+        <div class="footer-right flex-column">
+          <a href="/" class="footer-logo-link">
+            <img src="./assets/images/Logo.png" alt="Logo" class="footer-logo" />
+          </a>
+          <div class="footer-newsletter flex-column rounded-corner">
+            <label for="newsletter-email" class="footer-form-heading"
+              >Get Technical Updates
+            </label>
+            <form action="" class="footer-form">
+              <input
+                id="newsletter-email"
+                type="email"
+                name="email"
+                class="footer-input rounded-black"
+                placeholder="Enter your email"
+                maxlength="256"
+                requiredf
+              />
+              <button type="submit" class="button button-primary rounded-none">
+                Subscribe
+              </button>
+            </form>
+            <p class="footer-text">
+              Subscribe for deep dives into .NET architecture, C# development
+              tips, and my latest full-stack project builds.
+            </p>
+          </div>
+        </div>
+        <div class="footer-left">
+          <div class="footer-link-list flex-column">
+            <h6 class="footer-heading">Quick Links</h6>
+            <a href="" class="footer-link">About Me</a>
+            <a href="" class="footer-link">Services</a>
+            <a href="" class="footer-link">Projects</a>
+            <a href="" class="footer-link">Contact Me</a>
+          </div>
+          <div class="footer-link-list flex-column">
+            <h6 class="footer-heading">Contact</h6>
+            <a href="" class="footer-link">0106 9771 169</a>
+            <a href="" class="footer-link">emanibrahim0m<br />@gmail.com</a>
+            <a href="" class="footer-link">Cairo, Egypt</a>
+          </div>
+          <div class="footer-link-list flex-column">
+            <h6 class="footer-heading">Follow Me</h6>
+            <a href="www.linkedin.com/in/emanibrahim0m" class="social-link">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.338V9.17H5.337v9.168h3.002zM7.003 8.01a1.745 1.745 0 1 0 0-3.49 1.745 1.745 0 0 0 0 3.49zM18.338 18.338V12.89c0-2.673-.574-4.731-3.703-4.731-1.503 0-2.511.825-2.922 1.606h-.043V8.342h-2.885v9.996h3.004v-4.795c0-1.263.239-2.485 1.806-2.485 1.544 0 1.566 1.444 1.566 2.566v4.714h3.001z"
+                  fill="currentColor"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/emanibrahim0m" class="social-link"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://w3.org"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"
+                  fill="currentColor"
+                />
+              </svg>
+              GitHub</a
+            >
+          </div>
+        </div>
+      </footer>
+      <div id="end">
+        <hr style="margin-top: 3rem" />
+        <p>© 2026 EI - Licensing</p>
+        <p>Designed by Influx® </p>
+      </div>
+
+`
