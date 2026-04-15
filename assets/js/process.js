@@ -58,26 +58,3 @@ process_card_html += `
 // 
 const process = document.querySelector(".js-process-container");
 process.innerHTML += process_card_html;
-
-// Accordion
-const accordion_head = document.querySelectorAll(".process-card-head");
-const accordion_body = document.querySelectorAll(".process-card-body"); // The global list
-
-accordion_head.forEach((header) => {
-    header.addEventListener("click", () => {
-        const accordion_item = header.parentElement;
-        const accordion_content = accordion_item.querySelector(".process-card-body");
-
-        const isActive = accordion_content.classList.contains("active");
-
-        accordion_body.forEach((content) => {
-            content.classList.remove("active");
-            content.parentElement.classList.replace("rounded-corner", "rounded-none");
-        });
-
-        if (!isActive) {
-            accordion_content.classList.add("active");
-            accordion_item.classList.replace("rounded-none", "rounded-corner");
-        }
-    });
-});

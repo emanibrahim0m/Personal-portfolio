@@ -31,7 +31,7 @@ let service_card_html = '';
 services_cards.forEach((card) => {
     service_card_html += `
         <article class="service-card rounded-corner-black">
-            <div class="service-card-name">
+            <div class="service-card-name js-service-card-name">
                 <p class="service-name">${card.head}</p>
                 <span class="accordion-icon">
                     <svg class="rounded-none"
@@ -50,7 +50,7 @@ services_cards.forEach((card) => {
                     </svg>
                 </span>
             </div>
-            <div class="service-card-body">
+            <div class="service-card-body js-service-card-body">
                <img
                 src="${card.image}"
                 alt=""
