@@ -702,3 +702,13 @@ footer {
         gap: 1.5rem; 
     }
 }
+
+/* Git in touch extra */
+.contact-extra {
+    padding: 3rem;
+    background-color: var(--lightgray);
+}
+
+.getintouch-body {
+    font-size: var(--textsize-medium);
+}

@@ -49,6 +49,7 @@ ham_menu.addEventListener("click", () => {
 
 // Logos Section 
 const logos = document.querySelector(".logo-componant");
+if (logos) {
 logos.innerHTML += `
   <h6 class="logo-componant-header">Tools I work with</h6>
   <div class="logos-icons">
@@ -77,8 +78,39 @@ logos.innerHTML += `
       src="./assets/images/logos/c logo.jpg"
       alt="C# logo"
     />
-  </div>`
+  </div>`}
 
+// Get In Touch Section
+const contact = document.querySelector(".getintouch-section")
+if (contact) {
+contact.innerHTML = `
+<section class="a-s-hero  contact-extra">
+  <div class="a-s-hero-left flex-column">
+    <span class="tag text-tag rounded-none">Get in touch</span>
+    <h2 class="a-s-hero-head">
+      Lets work together
+    </h2>
+    <p class="getintouch-body">
+      Ready to transform your brand's digital presence and unlock the 
+      full potential of social media marketing? Reach out today, and 
+      let's start crafting your success story together.
+    </p>
+    <div class="a-s-hero-buttons">
+      <button class="button button-primary rounded-none">
+        Get in Touch
+      </button>
+      <button class="button button-secondary rounded-black">
+        Book a call
+      </button>
+    </div>
+  </div>
+  <img
+    src="./assets/images/Diff section imgs/Get it touch image.png"
+    alt=""
+    class="getintouch-img rounded-corner"
+  />
+</section>
+`}
 
 // Footer
 const footer = document.querySelector(".footer-container");
