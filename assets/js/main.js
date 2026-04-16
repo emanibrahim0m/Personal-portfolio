@@ -47,6 +47,38 @@ ham_menu.addEventListener("click", () => {
     nav_links.classList.toggle("active");    
 })
 
+// Logos Section 
+const logos = document.querySelector(".logo-componant");
+logos.innerHTML += `
+  <h6 class="logo-componant-header">Tools I work with</h6>
+  <div class="logos-icons">
+    <img
+      class="tool-logo"
+      src="./assets/images/logos/html-css-logo.jpg"
+      alt="Html css logo"
+    />
+    <img
+      class="tool-logo"
+      src="./assets/images/logos/sql-server-logo.jpg"
+      alt="sql server logo"
+    />
+    <img
+      class="tool-logo"
+      src="./assets/images/logos/react-logo.jpg"
+      alt="react logo"
+    />
+    <img
+      class="tool-logo"
+      src="./assets/images/logos/javascript-logo.jpg"
+      alt="javascript logo"
+    />
+    <img
+      class="tool-logo"
+      src="./assets/images/logos/c logo.jpg"
+      alt="C# logo"
+    />
+  </div>`
+
 
 // Footer
 const footer = document.querySelector(".footer-container");
