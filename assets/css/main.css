@@ -74,7 +74,6 @@
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-weight: 500;
-    color: var(--black);
     line-height: 1.2;
 }
 
@@ -403,7 +402,7 @@ nav {
 }
 
 /* Projects */
-.projects-head {
+.section-head-v1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -411,13 +410,14 @@ nav {
     margin-bottom: 3rem;
 }
 
-.project-head-left {
+.section-head-left-v1 {
     gap: 1rem;
     align-items: flex-start; 
     margin-bottom: 1rem;
+    max-width: 75rem;
 }
 
-.project-head-text {
+.section-head-text-v1 {
     font-size: var(--textsize-medium);
 }
 
@@ -517,11 +517,11 @@ nav {
 }
 
 /* Accordion for poth process / service */
-.process-card-body, .service-card-body{
+.process-card-body, .service-card-body.active{
     display: none;
 }
 
-.process-card-body.active, .service-card-body.active {
+.process-card-body.active, .service-card-body {
     display: grid;
 }
 
@@ -530,7 +530,7 @@ nav {
 }
 
 .process-card:has(.process-card-body.active) .accordion-icon svg,
-.service-card:has(.service-card-body.active) .accordion-icon svg {
+.service-card:has(.service-card-body) .accordion-icon svg {
     transform: rotate(-45deg);
     transition: transform 0.3s ease;
 }
@@ -645,6 +645,7 @@ footer {
     align-items: start; 
     gap: 1rem;   
 }
+
 .a-s-hero-img {
     aspect-ratio: 1;
     object-fit: cover;
@@ -653,6 +654,7 @@ footer {
     height: auto;
     object-position: right;
 }
+
 .a-s-hero-body {
     font-size: var(--textsize-medium);
 }
@@ -662,5 +664,41 @@ footer {
         grid-template-columns: 1fr;
         gap: 2.5rem; 
     }
+}
 
+/* Service-page / Progress Section */
+.progress-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.progress-card {
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.progress-card:nth-child(odd) {
+    background-color: var(--black);
+    color: var(--white);
+} 
+.progress-card:nth-child(even) {
+    background-color: var(--Lavender);
+    color: var(--black);
+} 
+
+.progress-num {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.progress-text {
+    font-size: var(--textsize-regular);
+}
+
+@media (max-width: 768px) {
+    .progress-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; 
+    }
 }
