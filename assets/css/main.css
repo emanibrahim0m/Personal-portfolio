@@ -159,7 +159,8 @@ ul {
 .button {
     cursor: pointer;
     padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 3vw, 1.25rem);
-    font-size: clamp(var(--textsize-tiny), 2vw, var(--textsize-small));
+    font-size: clamp(var(--textsize-tiny), 2vw, var(--textsize-regular));
+    width: max-content;
 }
 
 .button-primary {
@@ -214,14 +215,23 @@ ul {
     align-items: center;
     gap: 0.75rem;
     color: var(--black);
-    font-size: var(--textsize-small);
     margin-bottom: 0.5rem;
 }
 
+.social-link-small {
+    font-size: var(--textsize-small);
+}
+
+.social-link-big {
+    font-size: var(--textsize-medium);
+}
+
 .social-link svg {
-    color: var(--Lavender);
     width: 2rem;
     height: 2rem;
+    color: var(--Lavender);
+    /* width: 2rem;
+    height: 2rem; */
     display: block;
     background-color: var(--black);
     border-radius: 100rem;
@@ -596,9 +606,9 @@ footer {
 .footer-input {
     border: none;
     background-color: var(--gray);
-    border-radius: 100rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     width: 100%;
+    font-size: var(--textsize-regular);
     box-sizing: border-box;
 }
 
@@ -638,9 +648,9 @@ footer {
 /* About/Service Page  Hero Section */
 .a-s-hero {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .a-s-hero-left {
@@ -766,4 +776,31 @@ footer {
     .projects-container {
         column-count: 1;
     }
+}
+
+/* Contact Section */
+.contact-form-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-input-full {
+    box-sizing: border-box;
+    line-height: 2rem;
+    height: 12rem;
+}
+
+.contact-social, .contact-form-bottom,.contact-form-item {
+    gap: 1rem;
+}
+
+.contact-text {
+    font-size: var(--textsize-large);
+    text-wrap: balance
+}
+
+.footer-form-heading {
+    font-size: var(--textsize-medium);
 }

@@ -160,7 +160,7 @@ footer.innerHTML = `
           </div>
           <div class="footer-link-list flex-column">
             <h6 class="footer-heading">Follow Me</h6>
-            <a href="https://www.linkedin.com/in/emanibrahim0m" class="social-link">
+            <a href="https://www.linkedin.com/in/emanibrahim0m" class="social-link social-link-small">
               <svg
                 width="24"
                 height="24"
@@ -175,7 +175,7 @@ footer.innerHTML = `
               </svg>
               LinkedIn
             </a>
-            <a href="https://github.com/emanibrahim0m" class="social-link"
+            <a href="https://github.com/emanibrahim0m" class="social-link social-link-small"
               ><svg
                 width="24"
                 height="24"
