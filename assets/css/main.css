@@ -712,3 +712,31 @@ footer {
 .getintouch-body {
     font-size: var(--textsize-medium);
 }
+
+/* Skills/Education Section */
+.skills, .education-cards {
+    gap: 3rem;
+}
+
+.skill-text {
+    margin-top: 3rem;
+}
+
+.skill-card {
+    padding: 2rem;
+}
+
+.skill-card:nth-child(odd) {
+    background-color: var(--Lavender);
+} 
+
+.skill-card:nth-child(even) {
+    background-color: var(--lightgray);
+} 
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem; 
+    }
+}

@@ -84,7 +84,7 @@ logos.innerHTML += `
 const contact = document.querySelector(".getintouch-section")
 if (contact) {
 contact.innerHTML = `
-<section class="a-s-hero  contact-extra">
+<section class="a-s-hero  contact-extra rounded-corner">
   <div class="a-s-hero-left flex-column">
     <span class="tag text-tag rounded-none">Get in touch</span>
     <h2 class="a-s-hero-head">
