@@ -441,10 +441,12 @@ nav {
 }
 
 .project-img {
-    aspect-ratio: 16 / 9;
     width: 100%;
     object-fit: cover;
 }
+.home-project-img{aspect-ratio: 16 / 9;}
+.about-project-img{height: max-content;}
+    
 
 .project-description {
     padding: 1.25rem 1rem;
@@ -517,11 +519,11 @@ nav {
 }
 
 /* Accordion for poth process / service */
-.process-card-body, .service-card-body.active{
+.process-card-body, .service-card-body{
     display: none;
 }
 
-.process-card-body.active, .service-card-body {
+.process-card-body.active, .service-card-body.active {
     display: grid;
 }
 
@@ -530,7 +532,7 @@ nav {
 }
 
 .process-card:has(.process-card-body.active) .accordion-icon svg,
-.service-card:has(.service-card-body) .accordion-icon svg {
+.service-card:has(.service-card-body.active) .accordion-icon svg {
     transform: rotate(-45deg);
     transition: transform 0.3s ease;
 }
@@ -688,12 +690,12 @@ footer {
 } 
 
 .progress-num {
-    font-size: 3rem;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     font-weight: 700;
 }
 
 .progress-text {
-    font-size: var(--textsize-regular);
+    font-size: clamp(var(--textsize-small), 2vw, var(--textsize-regular));
 }
 
 @media (max-width: 768px) {
@@ -711,6 +713,10 @@ footer {
 
 .getintouch-body {
     font-size: var(--textsize-medium);
+}
+
+.getintouch-img {
+    width: 100%;
 }
 
 /* Skills/Education Section */
@@ -738,5 +744,26 @@ footer {
     .skills {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem; 
+    }
+}
+
+/* Project Page Projects */
+.projects-container {
+    background-color: var(--lightgray);
+    padding: 3rem;
+    column-count: 2;
+    column-gap: 5rem;
+    row-gap: 5rem;
+}
+.project-card {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5rem;
+    break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        column-count: 1;
     }
 }

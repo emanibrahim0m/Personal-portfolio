@@ -50,7 +50,7 @@ services_cards.forEach((card) => {
                     </svg>
                 </span>
             </div>
-            <div class="service-card-body js-service-card-body">
+            <div class="service-card-body js-service-card-body active">
                <img
                 src="${card.image}"
                 alt=""

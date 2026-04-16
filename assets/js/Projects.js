@@ -1,7 +1,7 @@
 // Data Structure
 const projects_cards = [{
     link: ``,
-    image: `./assets/images/temporary img.jpg`,
+    image: `./assets/images/projects/project2/me company.png`,
     name: `Company Profile Website`,
     text: `ME Company`,
     tool1: `JavaScript`,
@@ -9,7 +9,7 @@ const projects_cards = [{
     tool3: `HTML`,
 },{
     link: ``,
-    image: `./assets/images/temporary img.jpg`,
+    image: `./assets/images/projects/project1/personal portfolio.png`,
     name: `Personal Portfolio`,
     text: `Responsive website`,
     tool1: `JavaScript`,
@@ -22,20 +22,25 @@ const projects_cards = [{
     text: `Lorem Ipsum`,
     tool1: `Tool`,
     tool2: `Tool`,
+    tool3: `Tool`,
 }]
 
+// Diff Style
+const pageClass = window.location.pathname.includes("projects.html") 
+    ? "about-project-img" 
+    : "home-project-img";
 
 // loop through data array
 let project_card_html = '';
 projects_cards.forEach((card) => {
     project_card_html += `
-        <article class="project-card  rounded-corner">
+        <article class="project-card rounded-corner">
             <a href="${"#"}" class="project-link flex-column">
-                <img src="${card.image}" alt="" class="project-img  rounded-corner" />
+                <img src="${card.image}" alt="" class="project-img ${pageClass} rounded-corner" />
                 <div class="project-description flex-column">
                     <div class="project-text-body">
                         <h4 class="project-name">${card.name}</h4>
-                        <p class="project-text">ME Company</p>
+                        <p class="project-text">${card.text}</p>
                         <div class="tags-container">
                             <span class="tag tool-tag rounded-none">${card.tool1}</span>
                             <span class="tag tool-tag rounded-none">${card.tool2}</span>
